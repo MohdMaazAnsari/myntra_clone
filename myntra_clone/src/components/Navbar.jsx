@@ -26,7 +26,7 @@ export const Navbar = () => {
 <Spacer/>
 
 {/* ----------------- */}
-<HStack bg="blue.300" w="40%">
+<HStack bg="blue.600" w="40%">
 <Box w="100%">
     <Input/>
     {/* searchbar */}
