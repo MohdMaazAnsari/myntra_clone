@@ -129,40 +129,40 @@ export const Navbar = () => {
                       <div class = "sub-menu-item">
                         <h4>Men's Grooming</h4>
                         <ul>
-                          <li><a href = "#">Deodorants</Link></li>
-                          <li><a href = "#">Perfumes</Link></li>
-                          <li><a href = "#">Beard Care</Link></li>
-                          <li><a href = "#">Shaving & Aftersave</Link></li>
-                          <li><a href = "#">Beard Grooming</Link></li>
+                          <li><Link href = "#">Deodorants</Link></li>
+                          <li><Link href = "#">Perfumes</Link></li>
+                          <li><Link href = "#">Beard Care</Link></li>
+                          <li><Link href = "#">Shaving & Aftersave</Link></li>
+                          <li><Link href = "#">Beard Grooming</Link></li>
                         </ul>
                       </div>
                       {/* <!-- end of item --> */}
                       <div class = "sub-menu-item">
                         <h4>Clothing</h4>
                         <ul>
-                          <li><a href = "#">T-Shirts</a></li>
-                          <li><a href = "#">Formal Shirts</a></li>
-                          <li><a href = "#">Casual Shirts</a></li>
-                          <li><a href = "#">Jeans</a></li>
-                          <li><a href = "#">Casual Trousers</a></li>
-                          <li><a href = "#">Track Pants</a></li>
-                          <li><a href = "#">Cargos</a></li>
-                          <li><a href = "#">Suits</a></li>
-                          <li><a href = "#">Jackets</a></li>
-                          <li><a href = "#">Tracksuits</a></li>
+                          <li><Link href = "#">T-Shirts</Link></li>
+                          <li><Link href = "#">Formal Shirts</Link></li>
+                          <li><Link href = "#">Casual Shirts</Link></li>
+                          <li><Link href = "#">Jeans</Link></li>
+                          <li><Link href = "#">Casual Trousers</Link></li>
+                          <li><Link href = "#">Track Pants</Link></li>
+                          <li><Link href = "#">Cargos</Link></li>
+                          <li><Link href = "#">Suits</Link></li>
+                          <li><Link href = "#">Jackets</Link></li>
+                          <li><Link href = "#">Tracksuits</Link></li>
                         </ul>
                       </div>
                       {/* <!-- end of item --> */}
                       <div class = "sub-menu-item">
                         <h4>Accessories</h4>
                         <ul>
-                          <li><a href = "#">Backpacks</a></li>
-                          <li><a href = "#">Wallets</a></li>
-                          <li><a href = "#">Belts</a></li>
-                          <li><a href = "#">Sunglasses</a></li>
-                          <li><a href = "#">Frames</a></li>
-                          <li><a href = "#">Jewellery</a></li>
-                          <li><a href = "#">Watches</a></li>
+                          <li><Link href = "#">Backpacks</Link></li>
+                          <li><Link href = "#">Wallets</Link></li>
+                          <li><Link href = "#">Belts</Link></li>
+                          <li><Link href = "#">Sunglasses</Link></li>
+                          <li><Link href = "#">Frames</Link></li>
+                          <li><Link href = "#">Jewellery</Link></li>
+                          <li><Link href = "#">Watches</Link></li>
                         </ul>
                       </div>
                       {/* <!-- end of item --> */}
@@ -180,14 +180,14 @@ export const Navbar = () => {
                       <div class = "sub-menu-item">
                         <h4>Footwear</h4>
                         <ul>
-                          <li><a href = "#">Sports Shoes</a></li>
-                          <li><a href = "#">Casual Shoes</a></li>
-                          <li><a href = "#">Formal Shoes</a></li>
-                          <li><a href = "#">Flats</a></li>
-                          <li><a href = "#">Sandals</a></li>
-                          <li><a href = "#">Heels</a></li>
-                          <li><a href = "#">Boots</a></li>
-                          <li><a href = "#">Sneakers</a></li>
+                          <li><Link href = "#">Sports Shoes</Link></li>
+                          <li><Link href = "#">Casual Shoes</Link></li>
+                          <li><Link href = "#">Formal Shoes</Link></li>
+                          <li><Link href = "#">Flats</Link></li>
+                          <li><Link href = "#">Sandals</Link></li>
+                          <li><Link href = "#">Heels</Link></li>
+                          <li><Link href = "#">Boots</Link></li>
+                          <li><Link href = "#">Sneakers</Link></li>
                         </ul>
                       </div>
                       {/* <!-- end of item -->
@@ -195,38 +195,38 @@ export const Navbar = () => {
                       <div class = "sub-menu-item">
                         <h4>Beauty & Grooming</h4>
                         <ul>
-                          <li><a href = "#">Make Up</a></li>
-                          <li><a href = "#">Skin Care</a></li>
-                          <li><a href = "#">Hair Care</a></li>
-                          <li><a href = "#">Bath & Spa</a></li>
-                          <li><a href = "#">Deodorants & Perfumes</a></li>
+                          <li><Link href = "#">Make Up</Link></li>
+                          <li><Link href = "#">Skin Care</Link></li>
+                          <li><Link href = "#">Hair Care</Link></li>
+                          <li><Link href = "#">Bath & Spa</Link></li>
+                          <li><Link href = "#">Deodorants & Perfumes</Link></li>
                         </ul>
                       </div>
                       {/* <!-- end of item --> */}
                       <div class = "sub-menu-item">
                         <h4>Clothing</h4>
                         <ul>
-                          <li><a href = "#">Dresses</a></li>
-                          <li><a href = "#">Jeans</a></li>
-                          <li><a href = "#">Shorts</a></li>
-                          <li><a href = "#">Skirts</a></li>
-                          <li><a href = "#">Trousers</a></li>
-                          <li><a href = "#">Jeggings</a></li>
-                          <li><a href = "#">Sarees</a></li>
-                          <li><a href = "#">Kurtas</a></li>
-                          <li><a href = "#">Gowns</a></li>
+                          <li><Link href = "#">Dresses</Link></li>
+                          <li><Link href = "#">Jeans</Link></li>
+                          <li><Link href = "#">Shorts</Link></li>
+                          <li><Link href = "#">Skirts</Link></li>
+                          <li><Link href = "#">Trousers</Link></li>
+                          <li><Link href = "#">Jeggings</Link></li>
+                          <li><Link href = "#">Sarees</Link></li>
+                          <li><Link href = "#">Kurtas</Link></li>
+                          <li><Link href = "#">Gowns</Link></li>
                         </ul>
                       </div>
                       {/* <!-- end of item --> */}
                       <div class = "sub-menu-item">
                         <h4>Accessories</h4>
                         <ul>
-                          <li><a href = "#">Handbags</a></li>
-                          <li><a href = "#">Shoulder Bags</a></li>
-                          <li><a href = "#">Sling Bags</a></li>
-                          <li><a href = "#">Clutches</a></li>
-                          <li><a href = "#">Wallets</a></li>
-                          <li><a href = "#">Belts</a></li>
+                          <li><Link href = "#">Handbags</Link></li>
+                          <li><Link href = "#">Shoulder Bags</Link></li>
+                          <li><Link href = "#">Sling Bags</Link></li>
+                          <li><Link href = "#">Clutches</Link></li>
+                          <li><Link href = "#">Wallets</Link></li>
+                          <li><Link href = "#">Belts</Link></li>
                         </ul>
                       </div>
                       {/* <!-- end of item --> */}
@@ -244,11 +244,11 @@ export const Navbar = () => {
                       <div class = "sub-menu-item">
                         <h4>Boys' Clothing</h4>
                         <ul>
-                          <li><a href = "#">men's clothing</a></li>
-                          <li><a href = "#">women's clothing</a></li>
-                          <li><a href = "#">men's shoes</a></li>
-                          <li><a href = "#">women's shoes</a></li>
-                          <li><a href = "#">clothing deals</a></li>
+                          <li><Link href = "#">men's clothing</Link></li>
+                          <li><Link href = "#">women's clothing</Link></li>
+                          <li><Link href = "#">men's shoes</Link></li>
+                          <li><Link href = "#">women's shoes</Link></li>
+                          <li><Link href = "#">clothing deals</Link></li>
                         </ul>
                       </div>
                       {/* <!-- end of item -->
@@ -256,34 +256,34 @@ export const Navbar = () => {
                       <div class = "sub-menu-item">
                         <h4>Girls' Clothing</h4>
                         <ul>
-                          <li><a href = "#">fine jewelry</a></li>
-                          <li><a href = "#">fashion jewelry</a></li>
-                          <li><a href = "#">men's accessories</a></li>
-                          <li><a href = "#">handbags & bags</a></li>
-                          <li><a href = "#">kid's clothing</a></li>
+                          <li><Link href = "#">fine jewelry</Link></li>
+                          <li><Link href = "#">fashion jewelry</Link></li>
+                          <li><Link href = "#">men's accessories</Link></li>
+                          <li><Link href = "#">handbags & bags</Link></li>
+                          <li><Link href = "#">kid's clothing</Link></li>
                         </ul>
                       </div>
                       {/* <!-- end of item --> */}
                       <div class = "sub-menu-item">
                         <h4>Footwear</h4>
                         <ul>
-                          <li><a href = "#">fine jewelry</a></li>
-                          <li><a href = "#">fashion jewelry</a></li>
-                          <li><a href = "#">men's accessories</a></li>
-                          <li><a href = "#">handbags & bags</a></li>
-                          <li><a href = "#">kid's clothing</a></li>
+                          <li><Link href = "#">fine jewelry</Link></li>
+                          <li><Link href = "#">fashion jewelry</Link></li>
+                          <li><Link href = "#">men's accessories</Link></li>
+                          <li><Link href = "#">handbags & bags</Link></li>
+                          <li><Link href = "#">kid's clothing</Link></li>
                         </ul>
                       </div>
                       {/* <!-- end of item --> */}
                       <div class = "sub-menu-item">
                         <h4>Baby Care</h4>
                         <ul>
-                          <li><a href = "#">Diapers</a></li>
-                          <li><a href = "#">Baby grooming</a></li>
-                          <li><a href = "#">Baby Food</a></li>
-                          <li><a href = "#">Baby Gear</a></li>
-                          <li><a href = "#">Baby Bedding</a></li>
-                          <li><a href = "#">Baby Healthcare</a></li>
+                          <li><Link href = "#">Diapers</Link></li>
+                          <li><Link href = "#">Baby grooming</Link></li>
+                          <li><Link href = "#">Baby Food</Link></li>
+                          <li><Link href = "#">Baby Gear</Link></li>
+                          <li><Link href = "#">Baby Bedding</Link></li>
+                          <li><Link href = "#">Baby Healthcare</Link></li>
                         </ul>
                       </div>
                       {/* <!-- end of item --> */}
@@ -301,13 +301,13 @@ export const Navbar = () => {
                       <div class = "sub-menu-item">
                         <h4>Furnishing</h4>
                         <ul>
-                          <li><a href = "#">Bedsheets</a></li>
-                          <li><a href = "#">Curtains</a></li>
-                          <li><a href = "#">Cushions & Pillows</a></li>
-                          <li><a href = "#">Blankets</a></li>
-                          <li><a href = "#">Bath Towels</a></li>
-                          <li><a href = "#">Floor Covering</a></li>
-                          <li><a href = "#">Smart Door Locks</a></li>
+                          <li><Link href = "#">Bedsheets</Link></li>
+                          <li><Link href = "#">Curtains</Link></li>
+                          <li><Link href = "#">Cushions & Pillows</Link></li>
+                          <li><Link href = "#">Blankets</Link></li>
+                          <li><Link href = "#">Bath Towels</Link></li>
+                          <li><Link href = "#">Floor Covering</Link></li>
+                          <li><Link href = "#">Smart Door Locks</Link></li>
                         </ul>
                       </div>
                       {/* <!-- end of item -->
@@ -315,13 +315,13 @@ export const Navbar = () => {
                       <div class = "sub-menu-item">
                         <h4>Home Decor</h4>
                         <ul>
-                          <li><a href = "#">Painting</a></li>
-                          <li><a href = "#">Clocks</a></li>
-                          <li><a href = "#">Wall Shelves</a></li>
-                          <li><a href = "#">Stickers</a></li>
-                          <li><a href = "#">Bulbs</a></li>
-                          <li><a href = "#">Wall Lamps</a></li>
-                          <li><a href = "#">Table Lamps</a></li>
+                          <li><Link href = "#">Painting</Link></li>
+                          <li><Link href = "#">Clocks</Link></li>
+                          <li><Link href = "#">Wall Shelves</Link></li>
+                          <li><Link href = "#">Stickers</Link></li>
+                          <li><Link href = "#">Bulbs</Link></li>
+                          <li><Link href = "#">Wall Lamps</Link></li>
+                          <li><Link href = "#">Table Lamps</Link></li>
                         </ul>
                       </div>
                       {/* <!-- end of item -->
