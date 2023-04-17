@@ -10,3 +10,9 @@ export const Center={
    alignItems:"center",
    border:"1px solid red"
 }
+
+export const sub={
+   
+        padding-left: 1.2rem,
+   
+}
