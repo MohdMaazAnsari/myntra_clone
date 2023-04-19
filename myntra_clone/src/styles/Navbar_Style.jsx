@@ -11,8 +11,14 @@ export const Center={
    border:"1px solid red"
 }
 
-export const sub={
-   
-        padding-left: 1.2rem,
+export const menu={
+    border:"1px solid green",
+    display:"flex",
+    alignItems:"center",
+
+}
+export const circular={
+    borderRadius:"50%",
+   border:"1px solid red",
    
 }
