@@ -1,0 +1,44 @@
+.deals{
+    display:flex;
+    margin-left:15px;
+
+}
+.deals img{
+    width:12.3%;
+    padding:5px;
+}
+.dealsouter{
+    border:10px sold red
+}
+
+.bestdeals{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    gap:20px 5px;
+}
+
+.cirbag{
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+}
+
+.dealstopbrand{
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+}
+
+.mynluxe{
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+}
+.newtopin{
+    display:flex;
+
+}
+.newtopin img{
+    margin:5px
+}
+.hover:hover{
+    cursor: pointer;
+}

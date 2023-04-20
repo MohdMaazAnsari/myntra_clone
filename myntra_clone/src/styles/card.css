@@ -1,0 +1,44 @@
+.rating{
+    display:flex
+}
+
+.cards{
+    display:grid;
+   grid-template-columns: repeat(4,1fr);
+   gap:20px;
+   /* text-align: center; */
+   width:80%;
+   margin:auto;
+   border:1px solid red;
+}
+
+#filter-div{
+    display: flex;
+    padding-top: 30px;    
+}
+
+.filter {
+    background-color: white;
+    width: 20%;
+    margin-top: 20px;
+    margin-right: 60px;
+    margin-left: 10px;
+    padding-left: 30px;
+    height: 530px;
+}
+#filtering{
+
+    width: 400px;
+    border: 2px;
+    
+}
+#filtering a {
+    text-decoration: none;
+}
+
+#filtering>h2{
+    width: 100%;
+}
+
+
+

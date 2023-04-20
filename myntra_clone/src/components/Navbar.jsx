@@ -4,7 +4,7 @@ import{Box, Flex,HStack,Spacer,Input, Link} from "@chakra-ui/react"
 
 import { AiOutlineSearch,AiOutlineUser,AiOutlineHeart } from "react-icons/ai";
 import { BiCartAlt } from "react-icons/bi";
-import {Nav,Center,menu,circular} from "../styles/Navbar_Style"
+import {Nav,Center,menu,circular,inp} from "../styles/Navbar_Style"
 import "../Navbar.css"
 
 
@@ -28,6 +28,7 @@ export const Navbar = () => {
 <Box sx={menu}>
 
      <div id="h">
+     
         
     
 
@@ -425,7 +426,7 @@ export const Navbar = () => {
 {/* ----------------- */}
 <HStack  w="40%" mr="10px">
 <Box w="100%">
-    <Input/>
+    <Input sx={inp}/>
     {/* searchbar */}
 </Box>
 <Box  colorScheme="gray" p="10px" sx={circular} ><AiOutlineSearch/></Box>

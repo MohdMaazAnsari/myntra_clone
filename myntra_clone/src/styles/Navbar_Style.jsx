@@ -20,5 +20,8 @@ export const menu={
 export const circular={
     borderRadius:"50%",
    border:"1px solid red",
-   
+
+}
+export const inp={
+    border:"1px solid gray"
 }
