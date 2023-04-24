@@ -1,11 +1,11 @@
+import AllRoutes from "./pages/AllRoutes/AllRoutes";
 
 
-import Allroutes from "./allroutes/Allroutes";
 
 function App() {
   return (
     <div className="App">
-  <Allroutes />
+      <AllRoutes/>
     </div>
   );
 }

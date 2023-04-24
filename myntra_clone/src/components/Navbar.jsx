@@ -112,9 +112,9 @@ export const Navbar = () => {
               </li>
   
               <li>
-                <a href = "mens-product.html" class = "menu-link">
-                  Men
-                </a>
+                {/* <a href = "mens-product.html" class = "menu-link"> */}
+                 <Link href="/MensPage">mens</Link>
+                {/* </a> */}
                 <div class = "sub-menu">
                   {/* <!-- item --> */}
                   <div class = "sub-menu-item">
@@ -443,7 +443,9 @@ export const Navbar = () => {
 <Box><AiOutlineHeart/>
 <span>Wishlist</span>
 </Box>
-<Box><BiCartAlt/>
+<Box>
+<Link href="/Cart"><BiCartAlt/></Link>
+
 <span>Cart</span>
 </Box>
 
