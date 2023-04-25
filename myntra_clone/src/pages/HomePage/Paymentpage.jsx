@@ -1,4 +1,4 @@
-import { Box,Input,Button,Heading,HStack,PinInput,PinInputField ,Image} from '@chakra-ui/react'
+import { Box,Input,Button,Heading,HStack,PinInput,PinInputField ,Image, Center} from '@chakra-ui/react'
 import React, { useState} from 'react'
 import {Throttle} from "./Throttle"
 import { useEffect } from 'react'
@@ -161,9 +161,10 @@ setOtpdata(initialdata)
   // console.log(otpinput)
   // console.log(value)
   return (
+   
     <>
     <Box  height="830px"
-     bgRepeat={"no-repeat"} backgroundSize={"Cover"} backgroundImage={"url('https://images.pexels.com/photos/5632371/pexels-photo-5632371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')"}
+    //  bgRepeat={"no-repeat"} backgroundSize={"Cover"} backgroundImage={"url('https://images.pexels.com/photos/5632371/pexels-photo-5632371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')"}
      
      >
   <Box     textAlign="center" color={"teal"}>
@@ -171,7 +172,7 @@ Payment...
     </Box>
     
     <Box bg ="yellow.50" margin="auto" className={styles.box2} gap="100px" mt="50px"  mb={"50px"} width="80%" display="flex" flexDirection={"row"}>
-<Box border="1px solid teal" className={styles.box3} width="60%" >
+<Box className={styles.box3} width="60%" >
   <Box width="90%" margin="auto">
 <Box ><h3 style={{fontWeight:"bold"}}>Bank Offer</h3>
 <p style={{color:"red",fontWeight:"bold"}}>GET upto 500 cashback on Cred pay UPI on a minimum spend of Rs.1000 .TCA</p>
@@ -192,6 +193,7 @@ Payment...
   <Box>
     <Box mt="20px" marginLeft="30px"><Heading>Myntra</Heading></Box>
     <SignLogo/>
+ 
     </Box></Box>
 </Box>
 
@@ -199,7 +201,7 @@ Payment...
 <Box mt="50px"><h2 style={{fontWeight:"bold"}} >Choose Payment Mode</h2></Box>
 <Box className={styles.box4} gap="20px" display={"flex"}>
 <Box className={styles.box2} width="30%"  ><h3 style={{fontWeight:"bold",color:"red"}}>Recommanded</h3>
-<Box bg="gray.300" border="1px solid gray">
+<Box boxShadow= "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;" margin="20px" padding="20px 5px"  >
 
  <Box> <input  onChange={handlechange} name="name" type="radio" value={"cash"}/><label>Cash On Delivery</label></Box>
  <Box> <input onChange={handlechange} name="name" type="radio" value={"Debit"} /><label>Debit Card</label></Box>
@@ -238,7 +240,7 @@ Payment...
 
 </form>
 
-</Box>:<Box mt="40px"><p style={{fontWeight:"bold",textAlign:"center",color:"black"}}>Plase Try to Give the Payment by online method during delivery</p><Button mt="5px" ml="130px" display="inline" onClick={handleotp2} bg="pink">Place order</Button>{
+</Box>:<Box mt="40px"><p style={{fontWeight:"bold",textAlign:"center",color:"black"}}>Plase Try to Give the Payment by online method during delivery</p>{
   otpinput2&&<HStack mt="10px" ml={"90px"}> 
    <PinInput  defaultValue=''>
     <PinInputField value={otpdata.first} maxLength={1} name="first" onChange={handleotpdata} />
@@ -261,7 +263,7 @@ Payment...
 </Box></Box></Box>
 <Box   border="1px solid gray" className={styles.box3} bgColor={""} width="30%"  >
 
-<Heading bg = 'red' as="h6" textAlign={"center"} size="md" mt="50px">Smart-cart</Heading>
+<Heading bg="#FF527B"  as="h6" textAlign={"center"} size="md" mt="50px">Smart-cart</Heading>
   <p style={{textAlign:"center",fontWeight:"bold",marginTop:"50px", marginBottom : '10px'}}>Price Details({totalItems} items)</p>
   <Box  className={styles.box7} border="1px solid teal" width="70%" margin="auto">
   <Box display={"flex"}> <Box><Image display={"inline"} src="https://constant.myntassets.com/checkout/assets/img/gift-big.webp"/></Box> 
@@ -276,7 +278,12 @@ Payment...
 
 </Box>
 
+
+<Button mt="50px" ml="130px" display="inline" onClick={handleotp2} bg="#FF527B" >Place order</Button>
+
+
   </Box>
+ 
 </Box>
 
     </Box>

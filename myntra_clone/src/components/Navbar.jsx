@@ -1,10 +1,26 @@
 import React from 'react'
 
 import{Box, Flex,HStack,Spacer,Input, Link} from "@chakra-ui/react"
+import {
+ 
+ 
+  Grid,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+  Text,
 
+} from "@chakra-ui/react";
+
+import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+
+import { Link as MyLink } from "react-router-dom";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 import { AiOutlineSearch,AiOutlineUser,AiOutlineHeart } from "react-icons/ai";
 import { BiCartAlt } from "react-icons/bi";
-import {Nav,Center,menu,circular,inp} from "../styles/Navbar_Style"
+import {Nav,Center,menu,circular,inp,icon} from "../styles/Navbar_Style"
 import "../Navbar.css"
 
 
@@ -14,7 +30,71 @@ export const Navbar = () => {
 
 
   return (
-   <Box sx={Center} >
+   <Box >
+
+{/* ---------------------------------- */}
+
+<Flex
+        justifyContent="space-between"
+        marginX={"50px"}
+        marginY={"5px"}
+        mt={"10px"}
+        fontSize={"15px"}
+        fontWeight={"500"}
+        lineHeight={"20px"}
+      >
+        <Flex gap={30}>
+          <Text>
+            Hi! <MyLink to="/login">Sign in</MyLink> or <MyLink to="/signup">register</MyLink>
+          </Text>
+          <Link>Daily Deals</Link>
+          <Link>Help & Contact</Link>
+        </Flex>
+        <Flex gap={30}>
+          <Link>Sell</Link>
+          <Link>Watchlist</Link>
+
+          <Menu w="10px">
+            <MenuButton px={"4"} as={Text}>
+              My SmartCart <ChevronDownIcon />
+            </MenuButton>
+            <MenuList zIndex={3} color="black">
+              <Grid>
+                <MenuItem>Summary</MenuItem>
+                <MenuItem>Recently Viewed</MenuItem>
+                <MenuItem>Bids/Offers</MenuItem>
+                <MenuItem>Watchlist</MenuItem>
+                <MenuItem>Purchase History</MenuItem>
+                <MenuItem>Buy Again</MenuItem>
+                <MenuItem>Selling</MenuItem>
+                <MenuItem>Saved Searches</MenuItem>
+                <MenuItem>Saved Sellers</MenuItem>
+                <MenuItem>Messages</MenuItem>
+              </Grid>
+            </MenuList>
+          </Menu>
+          <NotificationsNoneOutlinedIcon />
+          <MyLink to="/Cart">
+            <ShoppingCartOutlinedIcon />
+          </MyLink>
+          <MyLink to="/adminlogin">
+            Admin
+          </MyLink>
+        </Flex>
+      </Flex>
+
+
+
+
+
+
+
+
+
+
+
+
+{/* -------------------------------------------- */}
 
     <Flex sx={Nav} justifyContent={'space-evenly'} m={10}>
 
@@ -25,7 +105,7 @@ export const Navbar = () => {
     h="40px" alt="logo"/>
 </Box>
 
-<Box sx={menu}>
+<Box sx={menu}  display={{sm:"none",md:"none",lg:"none"}}>
 
      <div id="h">
      
@@ -424,8 +504,8 @@ export const Navbar = () => {
 <Spacer/>
 
 {/* ----------------- */}
-<HStack  w="40%" mr="10px">
-<Box w="100%">
+<HStack  w="10%" mr="10px" display={{sm:"none",md:"block"}} >
+<Box w="100%"  >
     <Input sx={inp}/>
     {/* searchbar */}
 </Box>
@@ -435,21 +515,7 @@ export const Navbar = () => {
 {/* ------------------ */}
 <Spacer/>
 
-<HStack  spacing="30">
-    
-<Box sx={Center}><AiOutlineUser/>
-<span>Profile</span>
-</Box>
-<Box><AiOutlineHeart/>
-<span>Wishlist</span>
-</Box>
-<Box>
-<Link href="/Cart"><BiCartAlt/></Link>
 
-<span>Cart</span>
-</Box>
-
-</HStack>
     </Flex>
 
 
