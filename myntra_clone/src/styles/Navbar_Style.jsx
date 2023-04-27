@@ -34,14 +34,32 @@ export const menu={
     display:{
         base:"none",
           sm:"none",
-        md:"none",
+        md:"block",
         lg:"flex"
       
     }
 
 }
 
+export const ham={
+    display:{
+        base:"flex",
+          sm:"flex",
+        md:"none",
+        lg:"none"
+      
+    },
+   justifyContent:"space-between",
+}
 
+export const uppernav={
+    display:{
+        base:"flex",
+        md:"none",
+        lg:"block",
+        sm:"none"
+    }
+}
 
 export const circular={
     borderRadius:"50%",

@@ -1,15 +1,15 @@
-import React from 'react'
 
-import{Box, Flex,HStack,Spacer,Input, Link} from "@chakra-ui/react"
 import {
  
- 
+ Flex,
   Grid,
   Menu,
   MenuButton,
   MenuItem,
   MenuList,
-  Text,
+ Spacer,Box,
+ HStack,Link,
+ Text,Input,Button
 
 } from "@chakra-ui/react";
 
@@ -20,8 +20,22 @@ import { Link as MyLink } from "react-router-dom";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { AiOutlineSearch,AiOutlineUser,AiOutlineHeart } from "react-icons/ai";
 import { BiCartAlt } from "react-icons/bi";
-import {Nav,Center,menu,circular,inp,icon} from "../styles/Navbar_Style"
+import { GiHamburgerMenu
+} from "react-icons/gi";
+
+import {menu,circular,inp,icon,Nav, ham,uppernav} from "../styles/Navbar_Style"
 import "../Navbar.css"
+
+
+// -----------------------------------
+
+// Material UI Imports [ LOGOS ]  //
+
+import LocalMallIcon from '@mui/icons-material/LocalMall';
+
+import LoginIcon from '@mui/icons-material/Login';
+
+
 
 
 export const Navbar = () => {
@@ -29,12 +43,10 @@ export const Navbar = () => {
 
 
 
-  return (
-   <Box >
-
-{/* ---------------------------------- */}
-
-<Flex
+return(
+<>
+<Box sx={uppernav}>
+      <Flex
         justifyContent="space-between"
         marginX={"50px"}
         marginY={"5px"}
@@ -56,7 +68,7 @@ export const Navbar = () => {
 
           <Menu w="10px">
             <MenuButton px={"4"} as={Text}>
-              My SmartCart <ChevronDownIcon />
+              My Account <ChevronDownIcon />
             </MenuButton>
             <MenuList zIndex={3} color="black">
               <Grid>
@@ -82,20 +94,11 @@ export const Navbar = () => {
           </MyLink>
         </Flex>
       </Flex>
+      <hr />
+     
+    </Box>
 
-
-
-
-
-
-
-
-
-
-
-
-{/* -------------------------------------------- */}
-
+<Box>
     <Flex sx={Nav} justifyContent={'space-evenly'} m={10}>
 
 <HStack spacing="30"  p="5">
@@ -105,7 +108,7 @@ export const Navbar = () => {
     h="40px" alt="logo"/>
 </Box>
 
-<Box sx={menu}  display={{sm:"none",md:"none",lg:"none"}}>
+<Box sx={menu} zIndex={4}  display={{sm:"none",md:"none",lg:"none",xl:"none"}}>
 
      <div id="h">
      
@@ -504,7 +507,7 @@ export const Navbar = () => {
 <Spacer/>
 
 {/* ----------------- */}
-<HStack  w="10%" mr="10px" display={{sm:"none",md:"block"}} >
+<HStack  w="40%" mr="10px" display={{base:"none", sm:"none",md:"none",lg:"flex"}} >
 <Box w="100%"  >
     <Input sx={inp}/>
     {/* searchbar */}
@@ -515,10 +518,34 @@ export const Navbar = () => {
 {/* ------------------ */}
 <Spacer/>
 
+{/* --------- small screen--------- */}
+
+<Box as="Flex" sx={ham} w="50%">
+
+
+
+<MyLink to="/Cart">
+            <ShoppingCartOutlinedIcon m={"10px"} />
+          </MyLink>
+
+          <Text ml={"10px"}>
+            Hi! <MyLink to="/login">Sign in</MyLink> or <MyLink to="/signup">register</MyLink>
+          </Text>
+
+          <MyLink to="/adminlogin" m={"10px"}>
+            Admin
+          </MyLink>
+<GiHamburgerMenu  mr={"20px"} />
+
+
+</Box>
+
 
     </Flex>
 
 
    </Box>
+
+   </>
   )
 }

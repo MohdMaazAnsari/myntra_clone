@@ -56,7 +56,6 @@ export const Hero=() => {
         <img src="bag/1 (2).jpg" alt="" />
         <img src="bag/1 (3).jpg" alt="" />
         <img src="bag/1 (4).jpg" alt="" />
-
         <img src="bag/1 (5).jpg" alt="" />
         <img src="bag/1 (6).jpg" alt="" />
         <img src="bag/1 (7).jpg" alt="" />
