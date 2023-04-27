@@ -55,7 +55,7 @@ export const ham={
 export const uppernav={
     display:{
         base:"flex",
-        md:"none",
+        md:"block",
         lg:"block",
         sm:"none"
     }
@@ -63,14 +63,16 @@ export const uppernav={
 
 export const circular={
     borderRadius:"50%",
-   border:"1px solid red",
+
+backgroundColor:"rgb(238, 238, 238)"
 
 }
 export const inp={
-    border:"1px solid gray",
+    border:"1px solid rgb(238, 238, 238)",
   
 }
 
 export const icon={
     width:"100%"
 }
+

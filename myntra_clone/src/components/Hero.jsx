@@ -145,7 +145,7 @@ export const Hero=() => {
 
 <img src="newin/1 (1).jpg" alt="" />
 
-<img src="newin/1 (8).jpg" alt="" />
+<img src="newin/1 (6).jpg" alt="" />
 
 <img src="newin/1 (7).jpg" alt="" />
 

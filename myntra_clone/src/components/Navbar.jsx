@@ -1,3 +1,44 @@
+import React from "react"
+import {
+  Drawer,
+  DrawerBody,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+} from '@chakra-ui/react'
+
+import style from '../styles/Navbar.module.css'
+
+import Navaccordion from './Navaccordion';
+
+import { useColorModeValue } from '@chakra-ui/react'
+
+import { Button,Input, Text, HStack } from '@chakra-ui/react'
+
+import { SunIcon, MoonIcon } from '@chakra-ui/icons';
+
+import { useColorMode } from '@chakra-ui/react';
+
+import { Box ,Spacer} from '@chakra-ui/react';
+
+
+
+import { Badge } from '@chakra-ui/react';
+
+
+
+
+// ------------ MUI Icon ----------- \\
+
+import LoginIcon from '@mui/icons-material/Login';
+
+
+import LocalMallIcon from '@mui/icons-material/LocalMall';
+
+
+
 
 import {
  
@@ -7,11 +48,10 @@ import {
   MenuButton,
   MenuItem,
   MenuList,
- Spacer,Box,
- HStack,Link,
- Text,Input,Button
-
+ Link,
+  useDisclosure
 } from "@chakra-ui/react";
+
 
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
@@ -23,7 +63,7 @@ import { BiCartAlt } from "react-icons/bi";
 import { GiHamburgerMenu
 } from "react-icons/gi";
 
-import {menu,circular,inp,icon,Nav, ham,uppernav} from "../styles/Navbar_Style"
+import {menu,circular,inp,icon,Nav, ham,uppernav, listitems} from "../styles/Navbar_Style"
 import "../Navbar.css"
 
 
@@ -31,19 +71,26 @@ import "../Navbar.css"
 
 // Material UI Imports [ LOGOS ]  //
 
-import LocalMallIcon from '@mui/icons-material/LocalMall';
+// import LocalMallIcon from '@mui/icons-material/LocalMall';
 
-import LoginIcon from '@mui/icons-material/Login';
+// import LoginIcon from '@mui/icons-material/Login';
 
 
 
 
 export const Navbar = () => {
 
+  const { isOpen, onOpen, onClose } = useDisclosure()
 
+  const btnRef = React.useRef()
+  
+  const {toggleColorMode, colorMode} =  useColorMode(); 
 
 
 return(
+
+
+
 <>
 <Box sx={uppernav}>
       <Flex
@@ -101,13 +148,25 @@ return(
 <Box>
     <Flex sx={Nav} justifyContent={'space-evenly'} m={10}>
 
+<Box sx={ham}>
+<GiHamburgerMenu  mr={"20px"} ref={btnRef} colorScheme='teal' onClick={onOpen}/>
+
+
+</Box>
+
+
 <HStack spacing="30"  p="5">
 <Box w="60px" >
 
+
+  <MyLink to="/">
+
+
     <img src="https://images.indianexpress.com/2021/01/myntra.png" w="100%"
     h="40px" alt="logo"/>
-</Box>
+</MyLink>
 
+</Box>
 <Box sx={menu} zIndex={4}  display={{sm:"none",md:"none",lg:"none",xl:"none"}}>
 
      <div id="h">
@@ -535,7 +594,6 @@ return(
           <MyLink to="/adminlogin" m={"10px"}>
             Admin
           </MyLink>
-<GiHamburgerMenu  mr={"20px"} />
 
 
 </Box>
@@ -545,6 +603,105 @@ return(
 
 
    </Box>
+
+    <>
+     
+
+
+
+
+<Drawer
+        blockScrollOnMount={false}
+        isOpen={isOpen}
+        placement='left'
+        onClose={onClose}
+        finalFocusRef={btnRef}
+        isFullHeight = {true}
+       
+ 
+      >
+
+        {/* i added height for responsiveness in draweroverlay  */}
+
+
+        <DrawerOverlay minW = {'332px'} display = {{base : 'flex', '1157px' : 'none'}}  />
+
+        <DrawerContent display = {{base : 'flex', '1157px' : 'none'}} bg = '#001e3c' background={useColorModeValue('linear-gradient(324deg, rgba(255,255,255,1) 0%, rgba(225,240,255,1) 60%, rgba(222,217,255,1) 94%, rgba(253,242,255,1) 100%)',   'linear-gradient(324deg, rgba(1,32,64,1) 0%, rgba(0,29,54,1) 53%, rgba(8,24,62,1) 94%, rgba(1,29,34,1) 100%)')}>
+         
+          <DrawerCloseButton />
+
+
+
+          <DrawerHeader>
+
+                     
+                     <HStack _hover = {{cursor : 'pointer', color : useColorModeValue('light.primary','dark.primary')}}>
+
+                         <LoginIcon  /> 
+                         
+                         <Text fontSize={'18'}>Login</Text>
+                   
+                     </HStack>
+                      
+
+
+          </DrawerHeader>
+
+          <DrawerBody>
+
+
+         
+  
+         
+             <Navaccordion/>
+
+
+
+
+          </DrawerBody>
+
+          <DrawerFooter>
+
+
+            <HStack justify = 'space-between' w = '100px'>
+
+
+                        <Box  position={'relative'} >
+
+                                <LocalMallIcon className = {style.muimallicon} sx = {{color : colorMode == 'light' ? '#6B46C1' : 'rgb(0, 255, 213)'}} />
+
+                                <Badge zIndex={'-1'} display={'flex'} justifyContent='center' alignItems={'center'} w = '25px' h = '25px' borderRadius={'50%'} position={'absolute'} top = '-3' right = '-3' colorScheme='green'>10</Badge>
+
+                                {/* Tooltip */}
+
+                                <Box bg = {useColorModeValue('gray.200','rgb(15, 39, 87)')} w = '44px' borderRadius={'10px'} className={style.tooltip2}  px = '2' border = '1px solid'>Cart</Box>
+                    
+                        </Box>
+
+
+                            <Button bg = '' size  = {{base : 'sm','528px' : 'md'}} w = '20px' borderRadius={'50%'} onClick = {toggleColorMode}>
+
+                                                    {useColorModeValue(<SunIcon color = {useColorModeValue('light.primary','dark.primary')}/>,<MoonIcon color = {useColorModeValue('light.primary','dark.primary')}/>)}
+
+                            </Button>
+
+               </HStack>
+
+          </DrawerFooter>
+        </DrawerContent>
+      </Drawer>
+    
+    
+    
+    </>
+
+
+
+
+
+
+  
+
 
    </>
   )
