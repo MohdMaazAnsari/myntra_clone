@@ -3,12 +3,17 @@ import { useState } from 'react'
 import AdminSidebar from './Adminsidebar'
 import {Box,Td,Tr,Th,TableContainer,Table,TableCaption,Tbody,Tfoot,Thead,Heading,Image} from "@chakra-ui/react"
 import { FaCartPlus } from 'react-icons/fa'
+import { Navbar } from '../../../components/Navbar'
 export default function Adminpage() {
   const [data,setData]=useState(JSON.parse(localStorage.getItem("placeorder"))||[])
   const [cartdata,setCartData]=useState(JSON.parse(localStorage.getItem("cart_data"))||[])
  
   console.log(data)
   return (
+
+    <>
+    <Navbar/>
+
     <Box display={"flex"}>
       <Box> 
       <AdminSidebar/>
@@ -54,7 +59,7 @@ export default function Adminpage() {
 <Heading textAlign="center" as="h6" size="md">NO ORDERD YET</Heading></Box>}
   </Box>
   </Box>
-
+</>
 )
 
 }

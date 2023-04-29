@@ -626,7 +626,7 @@ return(
 
         <DrawerOverlay minW = {'332px'} display = {{base : 'flex', '1157px' : 'none'}}  />
 
-        <DrawerContent display = {{base : 'flex', '1157px' : 'none'}} bg = '#001e3c' background={useColorModeValue('linear-gradient(324deg, rgba(255,255,255,1) 0%, rgba(225,240,255,1) 60%, rgba(222,217,255,1) 94%, rgba(253,242,255,1) 100%)',   'linear-gradient(324deg, rgba(1,32,64,1) 0%, rgba(0,29,54,1) 53%, rgba(8,24,62,1) 94%, rgba(1,29,34,1) 100%)')}>
+        <DrawerContent display = {{base : 'flex', '1157px' : 'none'}} bg = '#001e3c' background={useColorModeValue('linear-gradient(324deg, rgba(255,255,255,1) 0%, rgba(225,240,255,1) 60%, rgba(222,217,255,1) 94%, rgba(253,242,255,1) 100%)',   'linear-gradient(324deg, rgba(1,32,64,1) 0%, rgba(0,29,54,1) 53%, rgba(8,24,62,1) 94%, rgba(1,29,34,1) 100%)')} >
          
           <DrawerCloseButton />
 
@@ -706,3 +706,5 @@ return(
    </>
   )
 }
+
+

@@ -1,5 +1,9 @@
 import React from 'react'
 import "../styles/hero.css"
+
+
+
+
 export const Hero=() => {
   return (
     
@@ -10,7 +14,7 @@ export const Hero=() => {
 </div>
 
    <div className='dealsouter'>
-   <h1>DEALS OF THE DAY</h1>
+   <h1 style={{fontFamily:"Assistant,"}}>DEALS OF THE DAY</h1>
 
 <div className="deals">
 

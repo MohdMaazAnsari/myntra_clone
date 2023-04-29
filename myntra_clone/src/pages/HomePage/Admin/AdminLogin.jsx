@@ -3,13 +3,16 @@ import { FormLabel,Heading,FormControl,Input,Stack,Flex,useColorModeValue,Button
 import { useNavigate } from 'react-router-dom';
 
 
+
+import { Navbar } from '../../../components/Navbar';
+
 export default function AdminLogin() {
   const [password,setPassword]=useState("")
   const [email,setEmail]=useState("")
   const navigate=useNavigate()
   const handlesubmit=(e)=>{
     e.preventDefault()
-    if(password&&email&&email=="admin@gmail.com"&&password=="123"){
+    if(password&&email&&email=="test@test.com"&&password=="test1"){
       navigate("/admin")
     }
     else {
@@ -18,6 +21,10 @@ export default function AdminLogin() {
 
   }
   return (
+    <>
+  <Navbar/>
+
+
     <Flex
       minH={'50vh'}
       align={'center'}
@@ -38,7 +45,7 @@ export default function AdminLogin() {
         <form onSubmit={handlesubmit}>
        
           <Input
-            placeholder="your-email@example.com"
+            placeholder="test@test.com"
             _placeholder={{ color: 'gray.500' }}
             type="email"
             onChange={(e)=>setEmail(e.target.value)}
@@ -46,7 +53,7 @@ export default function AdminLogin() {
        
       
           <Input type="password"
-          placeholder='password '
+          placeholder='test1 '
                  mt="20px"
           onChange={(e)=>setPassword(e.target.value)} />
        
@@ -67,6 +74,7 @@ export default function AdminLogin() {
       </Stack>
       
     </Flex>
+    </>
   );
 }
 
