@@ -10,6 +10,9 @@ import { useColorMode } from '@chakra-ui/react'
 import SignLogo from './SignLogo'
 import styles from "./Login.module.css"
 import { login } from '../REDUX/Login/action'
+import { Navbar } from './Navbar'
+
+
 const initialdata={
     id:"",
     password:""
@@ -32,7 +35,8 @@ const location=useLocation()
         e.preventDefault()
         const {id,password}=logoutdata
         if(id&&password){
-            dispatch(login(logoutdata)).then((res)=>{navigate(location.state,{replace:true})}).catch((error)=>alert("Please Provide Right Details"))
+            dispatch(login(logoutdata)).then((res)=>{navigate(location.state,{replace:true})})
+            .catch((error)=>alert("Please Provide Right Details"))
         }else {
             alert("plase fill all the details")
         }
@@ -41,6 +45,11 @@ const location=useLocation()
     }
   return (
     <>
+
+<Navbar/>
+
+
+
     <Box mb = '60px' top="1px" bgRepeat={"no-repeat"} backgroundSize={"Cover"}    backgroundImage={isDark&&"url('https://images.pexels.com/photos/2258536/pexels-photo-2258536.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')"} height={"700px"}>
    <Box  textAlign="center" height="50px" backgroundColor="#659DBD">
     <IconButton   display={{base:"inline",md:"inline",lg:"inline",xl:"inline","2xl":"inline"}}  icon={isDark ? <FaSun /> : <FaMoon />} isRound='true' onClick={toggleColorMode}></IconButton>

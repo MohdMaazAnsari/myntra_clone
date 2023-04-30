@@ -4,7 +4,7 @@ import axios from "axios"
 export const productsArr = ()=>(dispatch) => {
     dispatch({type:WOMENS_PRODUCT_REQUEST})
         axios
-.get("https://smart-cart-db.onrender.com/women").then((res)=>{
+.get("https://myntback.onrender.com/MensProducts").then((res)=>{
             console.log(res.data);
             dispatch({type:WOMENS_PRODUCT_SUCCESS,payload:res.data})
         }).catch(()=>{

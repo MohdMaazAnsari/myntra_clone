@@ -12,7 +12,7 @@ export const postfailure=()=>{
 }
 export const postdata=(obj)=>(dispatch)=>{
     dispatch(postrequest())
-    axios.post("https://smart-cart-db.onrender.com/MensProducts",obj).then((res)=>{
+    axios.post("https://myntback.onrender.com/MensProducts",obj).then((res)=>{
         console.log(res)
         alert(`Product with id${res.data.id} is successfully added`)
         dispatch(postsuccess())
@@ -36,7 +36,7 @@ export const deletedata=(id)=>(dispatch)=>{
     console.log(id)
 dispatch(deleterequest())
 
-axios.delete(`https://smart-cart-db.onrender.com/MensProducts/${id}`).then((res)=>{
+axios.delete(`https://myntback.onrender.com/MensProducts/${id}`).then((res)=>{
     console.log(res)
     alert(`Product with Id ${id} is Successfully deleted`)
     dispatch(deletesuccess())
@@ -58,7 +58,7 @@ export const updatefailure=()=>{
 export const updatedata=(id,obj)=>(dispatch)=>{
     console.log(id,obj)
     dispatch(updaterequest())
-    axios.patch(`https://smart-cart-db.onrender.com/MensProducts/${id}`,obj).then((res)=>{
+    axios.patch(`https://myntback.onrender.com/MensProducts/${id}`,obj).then((res)=>{
         console.log(res)
         alert(`Product with id${res.data.id} is successfully Updated`)
         dispatch(updatesuccess())

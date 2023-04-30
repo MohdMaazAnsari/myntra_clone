@@ -1,0 +1,49 @@
+
+
+#last-desc{
+    text-align:justify; 
+    padding:20px;
+  }
+  #last-desc >h1{
+      color: rgb(104, 102, 102); 
+      font-size: 25px;
+      font-weight:bold;
+    }
+    #last-desc >p{
+      color: rgb(170, 162, 162); 
+    }
+
+
+#footer{
+    margin-top: 50px;
+  }
+  #footer > #footera{
+  display:grid ;
+  grid-template-columns: repeat(6,1fr);
+  font-size: 15px;
+  background-color: #020f20;
+  color: whitesmoke;
+  padding-top: 40px;
+  padding-left: 80px;
+  height: 300px;
+  margin-top: 10px;
+  }
+  #footer > #footerb{
+  display: flex;
+  /* justify-content: ; */
+  }
+  #footerba{
+    padding: 20px;
+  }
+  
+  #footerbb{
+    display: flex;
+    justify-content: right;
+    width: 50%;
+   padding-left: 10px;
+  }
+  
+  /* logout button css */
+  .logout:hover{
+    cursor: pointer;
+  }

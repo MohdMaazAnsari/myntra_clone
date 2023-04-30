@@ -21,7 +21,7 @@ export const signup=(obj)=>(dispatch)=>{
 
     
     dispatch(signuprequest())
-return axios.post("https://smart-cart-db.onrender.com/logindata",obj).then((res)=>{
+return axios.post("https://myntback.onrender.com/MensProducts",obj).then((res)=>{
         // console.log(res)
        
         dispatch(signupsucc())

@@ -14,7 +14,7 @@ export const login=(obj)=>(dispatch)=>{
 
 
     dispatch(loginrequest())
-   return axios.get(`https://smart-cart-db.onrender.com/logindata/${id}`).then((res)=>{
+   return axios.get(`https://myntback.onrender.com/MensProducts/${id}`).then((res)=>{
      
   
         if(res.data.id!==id &&res.data.password!==password){

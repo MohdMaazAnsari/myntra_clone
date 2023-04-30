@@ -13,7 +13,7 @@ export function Home(){
     <Navbar/>
     <Mid/>
     <Hero/>
-    <Footer />
+   
 
     </>
        

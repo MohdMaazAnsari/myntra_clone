@@ -204,7 +204,7 @@ return (
 
                     <Text fontWeight={700} color = '#0d1225' fontSize={'20'}>{data[0]?.brand}</Text>
 
-                    <Text color = 'gray.500' fontSize={'18'}>{data[0]?.title} Best at Smart Cart Buy more.</Text>
+                    <Text color = 'gray.500' fontSize={'18'}>{data[0]?.title} Best at Myntra Buy more.</Text>
 
                     <HStack w = '160px' _hover = {{borderColor : 'black'}} mt = '12px' display = {data[0]?.ratings ? 'flex' : 'none'} border = '1px solid' px = '10px' borderRadius={'2px'} borderColor={'gray.300'} align = 'center'>
                         <Text fontSize={'14'} fontWeight = '700' color = '#151722'>{data[0]?.ratings}</Text>
