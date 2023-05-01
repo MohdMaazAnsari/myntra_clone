@@ -41,11 +41,12 @@ This project is a clone of the popular e-commerce website, Myntra. It functions 
 
 ## Demo 
 - Landing Page
+![Screenshot (1323)](https://user-images.githubusercontent.com/112798268/235461187-e4a786cb-9b93-4209-adf8-ad4c9d2df6d7.png)
+![Screenshot (1324)](https://user-images.githubusercontent.com/112798268/235461243-b91c89af-1139-4075-b4e2-9d9a1ce119b7.png)
+![Screenshot (1325)](https://user-images.githubusercontent.com/112798268/235461270-473b8b0e-5c94-4e4c-b4ae-988df4299f16.png)
+![Screenshot (1326)](https://user-images.githubusercontent.com/112798268/235461312-b5b276ad-0a00-4915-9bb3-a9cff211a46a.png)
+![Screenshot (1325)](https://user-images.githubusercontent.com/112798268/235461341-8f2db6ad-4a23-4d45-bac7-719fe74a367c.jpg)
 
-![Screenshot (1318)](https://user-images.githubusercontent.com/112798268/235459803-cd7248cc-7cc8-4c28-9a4f-b37364fec873.png)
-![Screenshot (1319)](https://user-images.githubusercontent.com/112798268/235459944-b586f626-8d1a-4f47-b2f3-900c54743874.png)
-![Screenshot (1320)](https://user-images.githubusercontent.com/112798268/235460051-b442ac39-e675-435f-8383-f16fdc3fc226.png)
-![Screenshot (1321)](https://user-images.githubusercontent.com/112798268/235460093-4f3f92da-8752-4120-8997-94a06389e355.png)
-![Screenshot (1322)](https://user-images.githubusercontent.com/112798268/235460123-1cd388ac-c8d5-46ea-b8a9-09a89a9bdb35.png)
-![Screenshot (1325)](https://user-images.githubusercontent.com/112798268/235460159-bb0da514-78e2-43dc-8b55-eb8811754458.jpg)
+
+
 
