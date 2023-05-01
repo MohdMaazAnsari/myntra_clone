@@ -86,6 +86,26 @@ This project is a clone of the popular e-commerce website, Myntra. It functions 
 🥳🥳🥳![Screenshot (1342)](https://user-images.githubusercontent.com/112798268/235465104-1b6e6e4d-2c43-4281-b9df-9e4916cd7262.png)
 
 
+**GUIDE :** `To go on Admin page click on Admin option in Navbar`
+
+`you can log into Admin page with these Credentials` and there you can perform all CRUD operations.
+
+`email-test@test.com
+password-test1`
+
+![Screenshot (1374)](https://user-images.githubusercontent.com/112798268/235486351-f30a3138-302d-4da0-9824-11ea0bd5cf70.png)
+
+![Screenshot (1375)](https://user-images.githubusercontent.com/112798268/235486366-fd0bab26-f95a-4953-9a53-8e8398834b0f.png)
+
+![Screenshot (1376)](https://user-images.githubusercontent.com/112798268/235486385-11a1142d-03a5-446e-a014-2970925bda08.png)
+
+![Screenshot (1377)](https://user-images.githubusercontent.com/112798268/235486400-3f6f8eb0-586b-46f2-823a-0a92b26fbd27.png)
+
+![Screenshot (1378)](https://user-images.githubusercontent.com/112798268/235486417-1ec1966c-8e86-457b-ba89-a3e8d3118787.png)
+
+
+
+
 ## Getting Started
 
 To get started with the project, follow these steps:
