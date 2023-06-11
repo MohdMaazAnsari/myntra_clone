@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react'
 
 import style from '../styles/Navbar.module.css'
-
+// tooltip
 import Navaccordion from './Navaccordion';
 
 import { useColorModeValue } from '@chakra-ui/react'
